@@ -1,0 +1,134 @@
+0
+"serial input: ",
+"serial input: ",
+1
+
+2
+
+3
+
+4
+
+5
+"**WARNING** RAM below 1000 bytes: ",
+"**VORSICHT** RAM unten 1000 bytes: ",
+6
+"**WARNING** RAM below 500 bytes: ",
+"**VORSICHT** RAM unten 500 bytes: ",
+7
+"**WARNING**",
+"**VORSICHT**",
+8
+"BOOT",
+"BOOT",
+9
+"engine hours: ",
+"motor stunden: ",
+10
+"Free RAM: ",
+"kostenlos RAM: ",
+11
+"Main Menu   ",
+"Hauptmenü   ",
+12
+"Information        ",
+"Informationen      ",
+13
+"Modes              ",
+"Modes              ",
+14
+"Settings           ",
+"Einstellungen      ",
+15
+"GPS                ",
+"GPS                ",
+16
+"Engine             ",
+"Motor              ",
+17
+"I/O States         ",
+"I/O Staaten        ",
+18
+"System             ",
+"System             ",
+19
+"Information ",
+"Informationen",
+20
+"I/O States         ",
+"I/O Staaten        ",
+21
+"Speed              ",
+"Beschleunigen      ",
+22
+"Altitude           ",
+"Höhe               ",
+23
+"Accuracy           ",
+"Genauigkeit        ",
+24
+"Sats #             ",
+"Satellites #       ",
+25
+"Coordinates        ",
+"Koordinaten        ",
+26
+"Hours              ",
+"Stunden            ",
+27
+"Voltage            ",
+"Spannung           ",
+28
+"Emergancy          ",
+"Notfall            ",
+29
+"Random             ",
+"Zufällige          ",
+30
+"Auto Light Delay   ",
+"Auto Licht Verzöger",
+31
+"Auto Light Dimmer  ",
+"Auto-Licht-Dimmer  ",
+32
+"Low Voltage Cut Off",
+"Low Voltage Cut Off",
+33
+"Speed Units        ",
+"Geschwindigkeit Ein",
+34
+"Altitude Units     ",
+"Höheneinheiten     ",
+35
+"Language           ",
+"Sprache            ",
+36
+"English            ",
+"Englisch           ",
+37
+"German             ",
+"Deutsch            ",
+38
+"Free RAM           ",
+"kostenlos          ",
+39
+"Free RAM   ",
+"kostenlos  ",
+40
+"Modes       ",
+"Modes       ",
+41
+"Settings    ",
+"Einstellunge",
+42
+"Language    ",
+"Sprache     ",
+43
+"language default: "};
+"Sprache standardmäßig: "};
+44
+"System      ",
+"System      ",
+
+
+language[]

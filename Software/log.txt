@@ -1,0 +1,63 @@
+2013/6/14/5:20:24 BOOT
+--------------------
+
+
+2013/6/14/6:32:22 BOOT
+--------------------
+
+2013/6/14/6:32:27 serial input: hour
+2013/6/14/6:32:27 serial input: s
+2013/6/14/6:32:29 serial input: hours
+2013/6/14/6:33:55 serial input: ram
+2013/6/14/6:34:1 serial input: hours
+2013/6/14/6:34:4 serial input: ram
+2013/6/14/6:36:37 serial input: hours
+2013/6/14/6:42:44 serial input: ram
+2013/6/14/6:42:50 serial input: hours
+
+2013/6/14/7:8:3 BOOT
+--------------------
+
+2013/6/14/7:9:16 serial input: hours
+
+2013/6/14/7:40:52 BOOT
+--------------------
+
+2013/6/14/7:40:59 serial input: hours
+
+2013/6/14/8:5:56 BOOT
+--------------------
+
+2013/6/14/8:5:56 engine hours: 0.00 hrs
+2013/6/14/8:5:56 free RAM: 5822 nytes
+2013/6/14/8:7:11 serial input: hours
+2013/6/14/8:54:40 serial input: hours
+2013/6/14/8:58:14 serial input: ram
+2013/6/14/8:58:19 serial input: hours
+2013/6/14/16:50:24 serial input: ram
+2013/6/14/16:50:31 serial input: hours
+
+
+2013/6/14/23:10:5 BOOT
+--------------------
+
+2013/6/14/23:10:5 language default: 1
+2013/6/14/23:10:5 engine hours: 0.00 hrs
+2013/6/14/23:10:5 Free RAM: 2495 bytes
+2013/6/14/23:10:8 serial input: hours
+
+
+2013/6/14/23:37:23 BOOT
+--------------------
+
+2013/6/14/23:37:23 language default: 1
+2013/6/14/23:37:23 engine hours: 0.00 hrs
+2013/6/14/23:37:23 Free RAM: 2495 bytes
+
+
+2013/6/14/23:37:45 BOOT
+--------------------
+
+2013/6/14/23:37:45 language default: 1
+2013/6/14/23:37:45 engine hours: 0.00 hrs
+2013/6/14/23:37:45 Free RAM: 2495 bytes
