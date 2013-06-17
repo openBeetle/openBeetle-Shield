@@ -148,6 +148,33 @@ int xSelect = 1;
 int ySelect = 1;
 int Select = 1;
 //int serialinString;
+float engineRunningTime(){
+  DateTime now = RTC.now();
+  int long currentRunningTime = now.unixtime();
+  totalRunningTime =  currentRunningTime - previousRunningTime + totalRunningTime;
+  float adjTotalRunningTime = totalRunningTime/60/60;
+  previousRunningTime = currentRunningTime;
+  return adjTotalRunningTime;
+}
+int memoryFree(){
+  int freeValue; 
+  if((int)__brkval == 0)
+    freeValue = ((int)&freeValue) - ((int)&__bss_end);
+  else
+    freeValue = ((int)&freeValue) - ((int)__brkval);
+  if (freeValue <= 1000 && freeValue > 500){
+    rtcSerialPrint();
+    Serial.print(language[5]);
+    Serial.println(freeValue);
+  }
+  if (freeValue <= 500){
+    rtcSerialPrint();
+    Serial.print(language[6]);
+    Serial.println(freeValue);
+    Serial.print(language[7]);
+  }
+  return freeValue;
+}
 // read serial inputs (using to simulate buttons for development)
 void serialRead(){
   String serialinString = "";
@@ -164,12 +191,24 @@ void serialRead(){
     ySelect = 1;
     xSelect = 1121;
     scrolldirection = 0;
+    rtcSerialPrint();
+  Serial.print(language[9]);
+  Serial.print(totalRunningTime/60/60);
+  Serial.println(" hrs");
   }
   //ram
   if (serialinString == "ram"){
     ySelect = 1;
     xSelect = 1141;
     scrolldirection = 0;
+    rtcSerialPrint();
+    int freeValue; 
+  if((int)__brkval == 0)
+    freeValue = ((int)&freeValue) - ((int)&__bss_end);
+  else
+    freeValue = ((int)&freeValue) - ((int)__brkval);
+    Serial.print(language[10]);
+    Serial.println(freeValue);
   }
   //w
   if (serialinString == "w"){
@@ -223,33 +262,6 @@ for (int lst = 0; lst <= lsl; lst++)  {
   Serial.print(language[43]);
   Serial.println(languageDefault);
 }
-}
-int memoryFree(){
-  int freeValue; 
-  if((int)__brkval == 0)
-    freeValue = ((int)&freeValue) - ((int)&__bss_end);
-  else
-    freeValue = ((int)&freeValue) - ((int)__brkval);
-  if (freeValue <= 1000 && freeValue > 500){
-    rtcSerialPrint();
-    Serial.print(language[5]);
-    Serial.println(freeValue);
-  }
-  if (freeValue <= 500){
-    rtcSerialPrint();
-    Serial.print(language[6]);
-    Serial.println(freeValue);
-    Serial.print(language[7]);
-  }
-  return freeValue;
-}
-float engineRunningTime(){
-  DateTime now = RTC.now();
-  int long currentRunningTime = now.unixtime();
-  totalRunningTime =  currentRunningTime - previousRunningTime + totalRunningTime;
-  float adjTotalRunningTime = totalRunningTime/60/60;
-  previousRunningTime = currentRunningTime;
-  return adjTotalRunningTime;
 }
 void programStart(){
   Serial.begin(9600);
