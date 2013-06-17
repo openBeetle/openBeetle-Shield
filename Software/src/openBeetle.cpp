@@ -203,6 +203,26 @@ void serialRead(){
     Serial.print("buttonpress: ");
     Serial.println(Select);
   }
+  //german
+  if (serialinString == "german"){
+for (int lst = 0; lst <= lsl; lst++)  {
+      language[lst] = german[lst];
+    }    
+  languageDefault = 1;
+    rtcSerialPrint();
+  Serial.print(language[43]);
+  Serial.println(languageDefault);
+}
+  //english
+  if (serialinString == "english"){
+for (int lst = 0; lst <= lsl; lst++)  {
+      language[lst] = english[lst];
+    }    
+  languageDefault = 0;
+    rtcSerialPrint();
+  Serial.print(language[43]);
+  Serial.println(languageDefault);
+}
 }
 int memoryFree(){
   int freeValue; 
