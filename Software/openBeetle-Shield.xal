@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<arduino-link-project>
+  <source-path>C:\Users\Cory\Desktop\New Text Document (4).txt</source-path>
+  <relative-path>N</relative-path>
+  <port>COM7</port>
+  <device-id />
+  <baud-rate>9600</baud-rate>
+  <log-file-path>G:\GitHub\openBeetle-Shield\Software\log.txt</log-file-path>
+  <append-cr>N</append-cr>
+  <append-lf>N</append-lf>
+  <transmit-strings>
+    <transmit-string>w</transmit-string>
+    <transmit-string>a</transmit-string>
+    <transmit-string>d</transmit-string>
+    <transmit-string>s</transmit-string>
+    <transmit-string>q</transmit-string>
+    <transmit-string>hours</transmit-string>
+    <transmit-string>ram</transmit-string>
+    <transmit-string>e</transmit-string>
+    <transmit-string>sssss</transmit-string>
+  </transmit-strings>
+  <serial-monkey>
+    <monkey-data>
+      <name>1</name>
+      <pattern>end</pattern>
+      <response>x</response>
+      <enabled>Y</enabled>
+    </monkey-data>
+    <monkey-data>
+      <name>Start</name>
+      <pattern>start</pattern>
+      <response>eddsssswwwwasdswassdswaasdswassdsssswwwwaez</response>
+      <enabled>Y</enabled>
+    </monkey-data>
+    <monkey-data>
+      <name>2</name>
+      <pattern>xSelect: 1</pattern>
+      <response>y</response>
+      <enabled>Y</enabled>
+    </monkey-data>
+    <monkey-data>
+      <name>End</name>
+      <pattern>ySelect: 1</pattern>
+      <response>eddsssswwwwasdswassdswaasdswassdsssswwwwaez</response>
+      <enabled>Y</enabled>
+    </monkey-data>
+  </serial-monkey>
+</arduino-link-project>
