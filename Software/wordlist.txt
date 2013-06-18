@@ -55,8 +55,8 @@
 "Information ",
 "Informationen",
 20
-"I/O States         ",
-"I/O Staaten        ",
+"I/O States  ",
+"I/O Staaten ",
 21
 "Speed              ",
 "Beschleunigen      ",
