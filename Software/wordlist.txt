@@ -22,7 +22,7 @@
 "BOOT",
 "BOOT",
 9
-"engine hours: ",
+"Engine Hours: ",
 "motor stunden: ",
 10
 "Free RAM: ",
@@ -129,6 +129,7 @@
 44
 "System      ",
 "System      ",
-
+45
+"Debug       ",
 
 language[]
