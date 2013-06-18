@@ -15,101 +15,104 @@ float  totalRunningTime;
 extern int __bss_end;
 extern void *__brkval;
 int languageDefault = 0;
-const String english[lsl] =  {"serial input: ",
-" ",
-" ",
-" ",
-" ",
-"**WARNING** RAM below 1000 bytes: ",
-"**WARNING** RAM below 500 bytes: ",
-"**WARNING**",
-"BOOT",
-"engine hours: ",
-"Free RAM: ",
-"Main Menu   ",
-"Information        ",
-"Modes              ",
-"Settings           ",
-"GPS                ",
-"Engine             ",
-"I/O States         ",
-"System             ",
-"Information ",
-"I/O States         ",
-"Speed              ",
-"Altitude           ",
-"Accuracy           ",
-"Sats #             ",
-"Coordinates        ",
-"Hours              ",
-"Voltage            ",
-"Emergancy          ",
-"Random             ",
-"Auto Light Delay   ",
-"Auto Light Dimmer  ",
-"Low Voltage Cut Off",
-"Speed Units        ",
-"Altitude Units     ",
-"Language           ",
-"English            ",
-"German             ",
-"Free RAM           ",
-"Free RAM   ",
-"Modes       ",
-"Settings    ",
-"Language    ",
-"language default: ",
-"System      ",
-"Debug       "};
-const String german[lsl] =  {"serial input: ",
-" ",
-" ",
-" ",
-" ",
-"**VORSICHT** RAM unten 1000 bytes: ",
-"**VORSICHT** RAM unten 500 bytes: ",
-"**VORSICHT**",
-"BOOT",
-"motor stunden: ",
-"kostenlos RAM: ",
-"Hauptmenü   ",
-"Informationen      ",
-"Modes              ",
-"Einstellungen      ",
-"GPS                ",
-"Motor              ",
-"I/O Staaten        ",
-"System             ",
-"Informationen",
-"I/O Staaten        ",
-"Beschleunigen      ",
-"Höhe               ",
-"Genauigkeit        ",
-"Satellites #       ",
-"Koordinaten        ",
-"Stunden            ",
-"Spannung           ",
-"Notfall            ",
-"Zufällige          ",
-"Auto Licht Verzöge ",
-"Auto-Licht-Dimmer  ",
-"Low Voltage Cut Off",
-"Geschwindigkeit Ei ",
-"Höheneinheiten     ",
-"Sprache            ",
-"Englisch           ",
-"Deutsch            ",
-"kostenlos          ",
-"kostenlos   ",
-"Modes       ",
-"Einstellunge",
-"Sprache     ",
-"Sprache standardmäßig: ",
-"System      ",
-"Debug       ",
+const String english[lsl] =  {
+  "serial input: ",
+  " ",
+  " ",
+  " ",
+  " ",
+  "**WARNING** RAM below 1000 bytes: ",
+  "**WARNING** RAM below 500 bytes: ",
+  "**WARNING**",
+  "BOOT",
+  "Engine Hours: ",
+  "Free RAM: ",
+  "Main Menu   ",
+  "Information        ",
+  "Modes              ",
+  "Settings           ",
+  "GPS                ",
+  "Engine             ",
+  "I/O States         ",
+  "System             ",
+  "Information ",
+  "I/O States         ",
+  "Speed              ",
+  "Altitude           ",
+  "Accuracy           ",
+  "Sats #             ",
+  "Coordinates        ",
+  "Hours              ",
+  "Voltage            ",
+  "Emergancy          ",
+  "Random             ",
+  "Auto Light Delay   ",
+  "Auto Light Dimmer  ",
+  "Low Voltage Cut Off",
+  "Speed Units        ",
+  "Altitude Units     ",
+  "Language           ",
+  "English            ",
+  "German             ",
+  "Free RAM           ",
+  "Free RAM   ",
+  "Modes       ",
+  "Settings    ",
+  "Language    ",
+  "language default: ",
+  "System      ",
+  "Debug       "};
+const String german[lsl] =  {
+  "serial input: ",
+  " ",
+  " ",
+  " ",
+  " ",
+  "**VORSICHT** RAM unten 1000 bytes: ",
+  "**VORSICHT** RAM unten 500 bytes: ",
+  "**VORSICHT**",
+  "BOOT",
+  "motor stunden: ",
+  "kostenlos RAM: ",
+  "Hauptmenü   ",
+  "Informationen      ",
+  "Modes              ",
+  "Einstellungen      ",
+  "GPS                ",
+  "Motor              ",
+  "I/O Staaten        ",
+  "System             ",
+  "Informationen",
+  "I/O Staaten        ",
+  "Beschleunigen      ",
+  "Höhe               ",
+  "Genauigkeit        ",
+  "Satellites #       ",
+  "Koordinaten        ",
+  "Stunden            ",
+  "Spannung           ",
+  "Notfall            ",
+  "Zufällige          ",
+  "Auto Licht Verzöge ",
+  "Auto-Licht-Dimmer  ",
+  "Low Voltage Cut Off",
+  "Geschwindigkeit Ei ",
+  "Höheneinheiten     ",
+  "Sprache            ",
+  "Englisch           ",
+  "Deutsch            ",
+  "kostenlos          ",
+  "kostenlos   ",
+  "Modes       ",
+  "Einstellunge",
+  "Sprache     ",
+  "Sprache standardmäßig: ",
+  "System      ",
+  "Debug       ",
 };
 
-String language[lsl] =  {};
+String language[lsl] =  {
+};
 void rtcSerialPrint(){
   RTC.begin();
   DateTime now = RTC.now();
@@ -195,9 +198,9 @@ void serialRead(){
     xSelect = 1121;
     scrolldirection = 0;
     rtcSerialPrint();
-  Serial.print(language[9]);
-  Serial.print(totalRunningTime/60/60);
-  Serial.println(" hrs");
+    Serial.print(language[9]);
+    Serial.print(totalRunningTime/60/60);
+    Serial.println(" hrs");
   }
   //ram
   if (serialinString == "ram"){
@@ -206,10 +209,10 @@ void serialRead(){
     scrolldirection = 0;
     rtcSerialPrint();
     int freeValue; 
-  if((int)__brkval == 0)
-    freeValue = ((int)&freeValue) - ((int)&__bss_end);
-  else
-    freeValue = ((int)&freeValue) - ((int)__brkval);
+    if((int)__brkval == 0)
+      freeValue = ((int)&freeValue) - ((int)&__bss_end);
+    else
+      freeValue = ((int)&freeValue) - ((int)__brkval);
     Serial.print(language[10]);
     Serial.println(freeValue);
   }
@@ -247,30 +250,44 @@ void serialRead(){
   }
   //german
   if (serialinString == "german"){
-for (int lst = 0; lst <= lsl; lst++)  {
+    for (int lst = 0; lst <= lsl; lst++)  {
       language[lst] = german[lst];
     }    
-  languageDefault = 1;
+    languageDefault = 1;
     rtcSerialPrint();
-  Serial.print(language[43]);
-  Serial.println(languageDefault);
-}
+    Serial.print(language[43]);
+    Serial.println(languageDefault);
+  }
   //english
   if (serialinString == "english"){
-for (int lst = 0; lst <= lsl; lst++)  {
+    for (int lst = 0; lst <= lsl; lst++)  {
       language[lst] = english[lst];
     }    
-  languageDefault = 0;
+    languageDefault = 0;
     rtcSerialPrint();
-  Serial.print(language[43]);
-  Serial.println(languageDefault);
-}
+    Serial.print(language[43]);
+    Serial.println(languageDefault);
+  }
   //debug
   if (serialinString == "debug"){
     xSelect = 99;
     ySelect = 1;
   }
-
+  //states
+  if (serialinString == "states"){
+    xSelect = 113;
+    ySelect = 1;
+  }
+  //modes
+  if (serialinString == "modes"){
+    xSelect = 12;
+    ySelect = 1;
+  }
+  //lang
+  if (serialinString == "lang"){
+    xSelect = 136;
+    ySelect = 1;
+  }
 }
 void programStart(){
   Serial.begin(9600);
@@ -285,12 +302,12 @@ void programStart(){
   previousRunningTime = now.unixtime();
   delay(2500);
   if (languageDefault == 0){
-  for (int lst = 0; lst <= lsl; lst++)  {
+    for (int lst = 0; lst <= lsl; lst++)  {
       language[lst] = english[lst];
     }
   }
   if (languageDefault == 1){
-  for (int lst = 0; lst <= lsl; lst++)  {
+    for (int lst = 0; lst <= lsl; lst++)  {
       language[lst] = german[lst];
     }
   }
@@ -316,7 +333,7 @@ void programStart(){
   lcd.print("openBeetle");
 }
 void lcdPrint(){
-  
+
   //1
   if (xSelect == 1){
     lcd.setCursor(17, 1);
@@ -940,9 +957,9 @@ void lcdPrint(){
     lcd.print(language[37]);
     if (Select == 0){
       for (int lst = 0; lst <= lsl; lst++)  {
-      language[lst] = english[lst];
-    }
-    languageDefault = 0;
+        language[lst] = english[lst];
+      }
+      languageDefault = 0;
     }
   }
   if (xSelect == 136 && ySelect == 2){
@@ -957,11 +974,11 @@ void lcdPrint(){
     lcd.setCursor(1, 3);
     lcd.print(language[37]);
     if (Select == 0){
-for (int lst = 0; lst <= lsl; lst++)  {
-      language[lst] = german[lst];
-    }    
-  }
-  languageDefault = 1;
+      for (int lst = 0; lst <= lsl; lst++)  {
+        language[lst] = german[lst];
+      }    
+    }
+    languageDefault = 1;
   }
   if (xSelect == 136 && ySelect > 2){
     ySelect = 2;
@@ -985,17 +1002,18 @@ for (int lst = 0; lst <= lsl; lst++)  {
     lcd.print(" ");
     lcd.setCursor(1, 3);
     lcd.print(language[9]);
-  lcd.print(totalRunningTime/60/60);
+    lcd.print(totalRunningTime/60/60);
     if (Select == 0){
     }
   }
-  if (xSelect == 114 && ySelect > 1){
+  if (xSelect == 99 && ySelect > 1){
     ySelect = 1;
   }
-  
-  
-  
+
+
+
   Select = 1;
 }
+
 
 
