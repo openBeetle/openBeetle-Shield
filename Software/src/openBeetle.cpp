@@ -2,7 +2,7 @@
 #include "LiquidCrystal_I2C.h"
 #include "RTClib.h"
 #include "partyMode.h"
-const int lsl = 45;
+const int lsl = 46;
 LiquidCrystal_I2C lcd(0x27,20,4);
 RTC_DS1307 RTC;
 int scrolldirection = 0;
@@ -59,7 +59,8 @@ const String english[lsl] =  {"serial input: ",
 "Settings    ",
 "Language    ",
 "language default: ",
-"System      "};
+"System      ",
+"Debug       "};
 const String german[lsl] =  {"serial input: ",
 " ",
 " ",
@@ -104,7 +105,9 @@ const String german[lsl] =  {"serial input: ",
 "Einstellunge",
 "Sprache     ",
 "Sprache standardmäßig: ",
-"System      "};
+"System      ",
+"Debug       ",
+};
 
 String language[lsl] =  {};
 void rtcSerialPrint(){
@@ -262,6 +265,12 @@ for (int lst = 0; lst <= lsl; lst++)  {
   Serial.print(language[43]);
   Serial.println(languageDefault);
 }
+  //debug
+  if (serialinString == "debug"){
+    xSelect = 99;
+    ySelect = 1;
+  }
+
 }
 void programStart(){
   Serial.begin(9600);
@@ -270,7 +279,7 @@ void programStart(){
   lcd.setCursor(0, 1);
   lcd.print("     openBeetle     ");
   lcd.setCursor(0, 3);
-  lcd.print("     v.20130614     ");
+  lcd.print("     v.20130617     ");
   RTC.begin();
   DateTime now = RTC.now();
   previousRunningTime = now.unixtime();
@@ -957,6 +966,35 @@ for (int lst = 0; lst <= lsl; lst++)  {
   if (xSelect == 136 && ySelect > 2){
     ySelect = 2;
   }
+  //99
+  if (xSelect == 99){
+    lcd.setCursor(17, 1);
+    lcd.print(ySelect);
+    lcd.print("/");
+    lcd.print("1");
+  }
+  if (xSelect == 99 && ySelect == 1){
+    lcd.setCursor(3, 1);
+    lcd.print(language[45]);
+    lcd.setCursor(0, 2);
+    lcd.print("*");
+    lcd.setCursor(1, 2);
+    lcd.print(language[10]);
+    lcd.print(memoryFree());
+    lcd.setCursor(0, 3);
+    lcd.print(" ");
+    lcd.setCursor(1, 3);
+    lcd.print(language[9]);
+  lcd.print(totalRunningTime/60/60);
+    if (Select == 0){
+    }
+  }
+  if (xSelect == 114 && ySelect > 1){
+    ySelect = 1;
+  }
+  
+  
+  
   Select = 1;
 }
 
