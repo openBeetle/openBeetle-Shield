@@ -1,7 +1,8 @@
 #include <arduino.h>
 #include "LiquidCrystal_I2C.h"
 #include "RTClib.h"
-#include "partyMode.h"
+//#include "partyMode.h"
+#include "Wire.h"
 const int lsl = 46;
 LiquidCrystal_I2C lcd(0x27,20,4);
 RTC_DS1307 RTC;
@@ -113,6 +114,51 @@ const String german[lsl] =  {
 
 String language[lsl] =  {
 };
+//Input States
+int brakeinState = 1;
+int posoneinState = 1;
+int postwoinState = 1;
+int rsignalinState = 1;
+int lsignalinState = 1;
+int highbeaminState = 1;
+int fourwayinState = 1;
+
+
+
+//Light Brightness Values
+int brbrightness = 0;
+int blbrightness = 0;
+int brsbrightness = 0;
+int blsbrightness = 0;
+int bmlbrightness = 0;
+int frhbrightness = 0;
+int frlbrightness = 0;
+int frsbrightness = 0;
+int frcbrightness = 0;
+int flhbrightness = 0;
+int fllbrightness = 0;
+int flsbrightness = 0;
+int flcbrightness = 0;
+int setbrsbrightness = 0;
+int setblsbrightness = 0;
+int setfrsbrightness = 0;
+int setflsbrightness = 0;
+int setfrlbrightness = 0;
+int setfrhbrightness = 0;
+int setfllbrightness = 0;
+int setflhbrightness = 0;
+
+
+long previousMillis;
+long interval = 500;
+
+
+
+
+
+
+
+
 void rtcSerialPrint(){
   RTC.begin();
   DateTime now = RTC.now();
@@ -150,7 +196,7 @@ void rtcmenuPrint(){
     lcd.print(now.second());
   } 
 }
-int xSelect = 1;
+int xSelect = 99;
 int ySelect = 1;
 int Select = 1;
 //int serialinString;
@@ -287,6 +333,16 @@ void serialRead(){
   if (serialinString == "lang"){
     xSelect = 136;
     ySelect = 1;
+  }
+  //brake
+  if (serialinString == "brake"){
+    if (brakeinState = 1){
+    brakeinState = 0;
+    }
+    else{
+    brakeinState = 1;
+    }
+    Serial.println(brakeinState);
   }
 }
 void programStart(){
@@ -1015,6 +1071,111 @@ void lcdPrint(){
 
   Select = 1;
 }
+
+void lights(long currentMillis){
+//If position one on turn lights on
+  if (posoneinState == LOW) {
+    frcbrightness = 255;
+    flcbrightness = 255;
+  }
+//If position two on turn lights on
+  if (postwoinState == LOW) {
+    brbrightness = 125;
+    blbrightness = 125;
+    brsbrightness = 125;
+    blsbrightness = 125;
+    frlbrightness = 255;
+    frsbrightness = 125;
+    frcbrightness = 255;
+    fllbrightness = 255;
+    flsbrightness = 125;
+    flcbrightness = 255; 
+  }
+//If high beams on turn lights on
+  if (highbeaminState == LOW) {
+    frhbrightness = 255;                                          
+    flhbrightness = 255;
+    fllbrightness = 0;
+    frlbrightness = 0;
+  }
+  //If break pressed turn lights on
+  if (brakeinState == LOW) {
+    brbrightness = 255;                                          
+    blbrightness = 255;  
+  }
+  //If right signal on blink lights
+  if (rsignalinState == LOW) {
+    if (currentMillis - previousMillis > interval){
+      previousMillis = currentMillis;
+      if (setbrsbrightness < 127){
+        setbrsbrightness = 255;
+        setfrsbrightness = 255;
+        setfrlbrightness = 0;
+        setfrhbrightness = 0;
+      }
+      else {
+        setbrsbrightness = 0;
+        setfrsbrightness = 0;
+        setfrlbrightness = 0;
+        setfrhbrightness = 0;
+      }
+    }
+    brsbrightness = setbrsbrightness;
+    frsbrightness = setfrsbrightness;
+    frlbrightness = setfrlbrightness;
+    frhbrightness = setfrhbrightness;
+  }
+  //If left signal on blink lights
+  if (lsignalinState == LOW) {
+    if (currentMillis - previousMillis > interval){
+      previousMillis = currentMillis;
+      if (setblsbrightness < 127){
+        setblsbrightness = 255;
+        setflsbrightness = 255;
+        setfllbrightness = 0;
+        setflhbrightness = 0;
+      }
+      else {
+        setblsbrightness = 0;
+        setflsbrightness = 0;
+        setfllbrightness = 0;
+        setflhbrightness = 0;
+      }
+    }
+    blsbrightness = setblsbrightness;
+    flsbrightness = setflsbrightness;
+    fllbrightness = setfllbrightness;
+    flhbrightness = setflhbrightness;
+  }
+  //If fourways on blink lights
+  if (fourwayinState == LOW) {
+    if (currentMillis - previousMillis > interval){
+      previousMillis = currentMillis;
+      if (setblsbrightness < 76){
+        setblsbrightness = 255;
+        setflsbrightness = 255;
+        setbrsbrightness = 255;
+        setfrsbrightness = 255;
+      }
+      else {
+        setblsbrightness = 0;
+        setflsbrightness = 0;
+        setbrsbrightness = 0;
+        setfrsbrightness = 0;
+      }
+    }
+    blsbrightness = setblsbrightness;
+    flsbrightness = setflsbrightness;
+    brsbrightness = setblsbrightness;
+    frsbrightness = setflsbrightness;
+  }
+}
+
+
+
+
+
+
 
 
 
