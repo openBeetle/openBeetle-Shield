@@ -336,13 +336,87 @@ void serialRead(){
   }
   //brake
   if (serialinString == "brake"){
-    if (brakeinState = 1){
+    if (brakeinState == 1){
     brakeinState = 0;
     }
     else{
     brakeinState = 1;
     }
+    rtcSerialPrint();
+    Serial.print("brakeinState: ");
     Serial.println(brakeinState);
+  }
+  //posone
+  if (serialinString == "posone"){
+    if (posoneinState == 1){
+    posoneinState = 0;
+    }
+    else{
+    posoneinState = 1;
+    }
+    rtcSerialPrint();
+    Serial.print("posoneinState: ");
+    Serial.println(posoneinState);
+  }
+  //postwo
+  if (serialinString == "postwo"){
+    if (postwoinState == 1){
+    postwoinState = 0;
+    }
+    else{
+    postwoinState = 1;
+    }
+    rtcSerialPrint();
+    Serial.print("postwoinState: ");
+    Serial.println(postwoinState);
+  }
+  //rsignal
+  if (serialinString == "rsignal"){
+    if (rsignalinState == 1){
+    rsignalinState = 0;
+    }
+    else{
+    rsignalinState = 1;
+    }
+    rtcSerialPrint();
+    Serial.print("rsignalinState: ");
+    Serial.println(rsignalinState);
+  }
+  //lsignal
+  if (serialinString == "lsignal"){
+    if (lsignalinState == 1){
+    lsignalinState = 0;
+    }
+    else{
+    lsignalinState = 1;
+    }
+    rtcSerialPrint();
+    Serial.print("lsignalinState: ");
+    Serial.println(lsignalinState);
+  }
+  //hbeam
+  if (serialinString == "hbeam"){
+    if (highbeaminState == 1){
+    highbeaminState = 0;
+    }
+    else{
+    highbeaminState = 1;
+    }
+    rtcSerialPrint();
+    Serial.print("highbeaminState: ");
+    Serial.println(highbeaminState);
+  }
+  //fway
+  if (serialinString == "fway"){
+    if (fourwayinState == 1){
+    fourwayinState = 0;
+    }
+    else{
+    fourwayinState = 1;
+    }
+    rtcSerialPrint();
+    Serial.print("fourwayinState: ");
+    Serial.println(fourwayinState);
   }
 }
 void programStart(){
@@ -1044,7 +1118,7 @@ void lcdPrint(){
     lcd.setCursor(17, 1);
     lcd.print(ySelect);
     lcd.print("/");
-    lcd.print("1");
+    lcd.print("4");
   }
   if (xSelect == 99 && ySelect == 1){
     lcd.setCursor(3, 1);
@@ -1063,8 +1137,55 @@ void lcdPrint(){
     if (Select == 0){
     }
   }
-  if (xSelect == 99 && ySelect > 1){
-    ySelect = 1;
+if (xSelect == 99 && ySelect == 2){
+    lcd.setCursor(3, 1);
+    lcd.print(language[45]);
+    if (scrolldirection == 1){
+      lcd.setCursor(0, 2);
+      lcd.print(" ");
+      lcd.setCursor(1, 2);
+      lcd.print(language[10]);
+      lcd.print(memoryFree());
+      lcd.print("    ");
+      lcd.setCursor(0, 3);
+      lcd.print("*");
+      lcd.setCursor(1, 3);
+      lcd.print(language[9]);
+      lcd.print(totalRunningTime/60/60);
+    }
+    if (scrolldirection == 0){
+      lcd.setCursor(0, 2);
+      lcd.print("*");
+      lcd.setCursor(1, 2);
+      lcd.print(language[9]);
+      lcd.print(totalRunningTime/60/60);
+      lcd.setCursor(0, 3);
+      lcd.print(" ");
+      lcd.setCursor(1, 3);
+      lcd.print("test");
+  }
+  
+  
+  
+    if (Select == 0){
+    }
+  }
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  if (xSelect == 99 && ySelect > 4){
+    ySelect = 4;
   }
 
 
