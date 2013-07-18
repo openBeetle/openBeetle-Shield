@@ -16,8 +16,18 @@
     <transmit-string>q</transmit-string>
     <transmit-string>hours</transmit-string>
     <transmit-string>ram</transmit-string>
-    <transmit-string>e</transmit-string>
-    <transmit-string>sssss</transmit-string>
+    <transmit-string>english</transmit-string>
+    <transmit-string>german</transmit-string>
+    <transmit-string>debug</transmit-string>
+    <transmit-string>lang</transmit-string>
+    <transmit-string>states</transmit-string>
+    <transmit-string>brake</transmit-string>
+    <transmit-string>posone</transmit-string>
+    <transmit-string>postwo</transmit-string>
+    <transmit-string>rsignal</transmit-string>
+    <transmit-string>lsignal</transmit-string>
+    <transmit-string>hbeam</transmit-string>
+    <transmit-string>fway</transmit-string>
   </transmit-strings>
   <serial-monkey>
     <monkey-data>

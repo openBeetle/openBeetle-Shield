@@ -8,10 +8,12 @@ void loop(){
   unsigned long currentMillis = millis();
   rtcmenuPrint();
   if (Serial.available() > 0) {
-  serialRead();
+    serialRead();
   }
   lcdPrint();
   engineRunningTime();
   memoryFree();
   lights(currentMillis);
 }
+
+

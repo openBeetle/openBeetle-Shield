@@ -320,3 +320,4 @@ void LiquidCrystal_I2C::draw_vertical_graph(uint8_t row, uint8_t column, uint8_t
 void LiquidCrystal_I2C::setContrast(uint8_t new_val){}
 
 	
+

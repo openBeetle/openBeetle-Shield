@@ -61,3 +61,285 @@
 2013/6/14/23:37:45 language default: 1
 2013/6/14/23:37:45 engine hours: 0.00 hrs
 2013/6/14/23:37:45 Free RAM: 2495 bytes
+
+
+2013/6/17/1:30:47 BOOT
+--------------------
+
+2013/6/17/1:30:47 language default: 0
+2013/6/17/1:30:47 engine hours: 0.00 hrs
+2013/6/17/1:30:47 Free RAM: 1895 bytes
+2013/6/17/1:32:3 serial input: hours
+2013/6/17/1:53:38 serial input: ram
+
+
+2013/6/17/1:59:7 BOOT
+--------------------
+
+2013/6/17/1:59:7 language default: 0
+2013/6/17/1:59:7 engine hours: 0.00 hrs
+2013/6/17/1:59:7 Free RAM: 1881 bytes
+2013/6/17/1:59:17 serial input: english
+2013/6/17/1:59:17 language default: 0
+2013/6/17/1:59:25 serial input: german
+2013/6/17/1:59:25 Sprache standardm????ig: 1
+2013/6/17/1:59:33 serial input: english
+2013/6/17/1:59:33 language default: 0
+2013/6/17/2:6:33 ram
+
+
+2013/6/17/2:16:41 BOOT
+--------------------
+
+2013/6/17/2:16:41 language default: 0
+2013/6/17/2:16:41 engine hours: 0.00 hrs
+2013/6/17/2:16:41 Free RAM: 1881 bytes
+2013/6/17/2:16:44 serial input: ram
+2013/6/17/2:16:44 **WARNING** RAM below 500 bytes: 1884
+**WARNING**
+
+2013/6/17/2:19:3 BOOT
+--------------------
+
+2013/6/17/2:19:3 language default: 0
+2013/6/17/2:19:3 engine hours: 0.00 hrs
+2013/6/17/2:19:3 Free RAM: 1881 bytes
+2013/6/17/2:19:6 serial input: ram
+2013/6/17/2:19:6 Free RAM: 1884
+
+
+2013/6/17/2:21:49 BOOT
+--------------------
+
+2013/6/17/2:21:49 language default: 0
+2013/6/17/2:21:49 engine hours: 0.00 hrs
+2013/6/17/2:21:49 Free RAM: 1881 bytes
+2013/6/17/2:21:55 serial input: hours
+2013/6/17/2:21:55 engine hours: 9.00 hrs
+2013/6/17/2:21:58 serial input: hours
+2013/6/17/2:21:58 engine hours: 12.00 hrs
+2013/6/17/2:22:1 serial input: hours
+2013/6/17/2:22:1 engine hours: 15.00 hrs
+2013/6/17/2:22:3 serial input: hours
+2013/6/17/2:22:3 engine hours: 17.00 hrs
+2013/6/17/2:22:5 serial input: hours
+2013/6/17/2:22:5 engine hours: 19.00 hrs
+2013/6/17/2:22:8 serial input: hours
+2013/6/17/2:22:8 engine hours: 22.00 hrs
+2013/6/17/2:22:10 serial input: hours
+2013/6/17/2:22:10 engine hours: 24.00 hrs
+
+
+2013/6/17/2:26:3 BOOT
+--------------------
+
+2013/6/17/2:26:3 language default: 0
+2013/6/17/2:26:3 engine hours: 0.00 hrs
+2013/6/17/2:26:3 Free RAM: 1881 bytes
+2013/6/17/2:26:6 serial input: hours
+2013/6/17/2:26:6 engine hours: 0.00 hrs
+2013/6/17/2:26:11 serial input: hours
+2013/6/17/2:26:11 engine hours: 0.00 hrs
+2013/6/17/2:27:14 serial input: hours
+2013/6/17/2:27:14 engine hours: 0.02 hrs
+2013/6/17/2:27:25 serial input: ram
+2013/6/17/2:27:25 Free RAM: 1884
+2013/6/17/2:27:31 serial input: ram
+2013/6/17/2:27:31 Free RAM: 1884
+2013/6/17/2:47:37 serial input: a
+2013/6/17/2:47:39 serial input: a
+2013/6/17/2:48:2 serial input: hours
+2013/6/17/2:48:2 engine hours: 0.37 hrs
+2013/6/17/2:48:3 serial input: hours
+2013/6/17/2:48:3 engine hours: 0.37 hrs
+2013/6/17/2:57:10 serial input: ram
+2013/6/17/2:57:10 Free RAM: 1884
+2013/6/17/18:44:41 serial input: hours
+2013/6/17/18:44:41 engine hours: 16.31 hrs
+
+
+2013/6/17/19:42:58 BOOT
+--------------------
+
+2013/6/17/19:42:58 language default: 0
+2013/6/17/19:42:58 engine hours: 0.00 hrs
+2013/6/17/19:42:58 Free RAM: 1875 bytes
+2013/6/17/19:43:2 serial input: debug
+
+
+2013/6/17/19:54:2 BOOT
+--------------------
+
+2013/6/17/19:54:2 language default: 0
+2013/6/17/19:54:2 engine hours: 0.00 hrs
+2013/6/17/19:54:2 Free RAM: 1806 bytes
+2013/6/17/19:54:5 serial input: debug
+
+
+2013/6/17/19:59:52 BOOT
+--------------------
+
+2013/6/17/19:59:52 language default: 0
+2013/6/17/19:59:52 Engine Hours: 0.00 hrs
+2013/6/17/19:59:52 Free RAM: 1806 bytes
+2013/6/17/19:59:53 serial input: debug
+2013/6/17/23:47:25 serial input: a
+2013/6/17/23:47:27 serial input: s
+2013/6/17/23:47:28 serial input: s
+2013/6/17/23:47:28 serial input: s
+2013/6/17/23:47:31 serial input: w
+2013/6/17/23:47:31 serial input: w
+2013/6/17/23:47:32 serial input: w
+2013/6/17/23:47:32 serial input: w
+2013/6/17/23:48:4 serial input: du
+2013/6/17/23:48:10 serial input: debug
+2013/6/17/23:48:40 serial input: debug
+2013/6/17/23:50:9 serial input: a
+2013/6/17/23:50:13 serial input: debug
+2013/6/17/23:50:53 serial input: s
+2013/6/17/23:50:55 serial input: s
+2013/6/17/23:50:56 serial input: w
+2013/6/17/23:50:57 serial input: w
+
+
+2013/6/17/23:58:23 BOOT
+--------------------
+
+2013/6/17/23:58:23 language default: 0
+2013/6/17/23:58:23 Engine Hours: 0.00 hrs
+2013/6/17/23:58:23 Free RAM: 1788 bytes
+2013/6/17/23:58:28 serial input: lang
+2013/6/17/23:58:33 serial input: states
+
+
+2013/6/18/0:2:55 BOOT
+--------------------
+
+2013/6/18/0:2:55 language default: 0
+2013/6/18/0:2:55 Engine Hours: 0.00 hrs
+2013/6/18/0:2:55 Free RAM: 1783 bytes
+2013/6/18/0:2:58 serial input: states
+2013/6/18/0:4:9 serial input: debug
+
+
+2013/6/18/0:8:22 BOOT
+--------------------
+
+2013/6/18/0:8:22 language default: 0
+2013/6/18/0:8:22 Engine Hours: 0.00 hrs
+2013/6/18/0:8:22 Free RAM: 1779 bytes
+2013/6/18/0:8:27 serial input: states
+2013/6/18/0:8:29 serial input: debug
+2013/6/18/0:9:34 serial input: states
+2013/6/18/0:9:49 serial input: lang
+2013/6/18/0:9:58 serial input: debug
+
+
+2013/6/18/9:56:17 BOOT
+--------------------
+
+2013/6/18/9:56:17 language default: 0
+2013/6/18/9:56:17 Engine Hours: 0.00 hrs
+2013/6/18/9:56:17 Free RAM: 1779 bytes
+2013/6/18/9:56:20 serial input: debug
+
+
+2013/6/18/10:55:26 BOOT
+--------------------
+
+2013/6/18/10:55:26 language default: 0
+2013/6/18/10:55:26 Engine Hours: 0.00 hrs
+2013/6/18/10:55:26 Free RAM: 1779 bytes
+2013/6/18/10:55:33 serial input: debug
+
+
+2013/6/24/1:9:0 BOOT
+--------------------
+
+2013/6/24/1:9:0 language default: 0
+2013/6/24/1:9:0 Engine Hours: 0.00 hrs
+2013/6/24/1:9:0 Free RAM: 1779 bytes
+2013/6/24/1:9:30 serial input: debug
+
+
+2013/6/24/1:32:16 BOOT
+--------------------
+
+2013/6/24/1:32:16 language default: 0
+2013/6/24/1:32:16 Engine Hours: 0.00 hrs
+2013/6/24/1:32:16 Free RAM: 1779 bytes
+
+
+2013/6/24/1:32:41 BOOT
+--------------------
+
+2013/6/24/1:32:41 language default: 0
+2013/6/24/1:32:41 Engine Hours: 0.00 hrs
+2013/6/24/1:32:41 Free RAM: 1779 bytes
+
+
+2013/6/24/2:54:56 BOOT
+--------------------
+
+2013/6/24/2:54:56 language default: 0
+2013/6/24/2:54:56 Engine Hours: 0.00 hrs
+2013/6/24/2:54:56 Free RAM: 1532 bytes
+
+
+2013/6/24/3:20:5 BOOT
+--------------------
+
+2013/6/24/3:20:5 language default: 0
+2013/6/24/3:20:5 Engine Hours: 0.00 hrs
+2013/6/24/3:20:6 Free RAM: 1532 bytes
+2013/6/24/6:13:16 serial input: s
+2013/6/24/6:13:17 serial input: s
+2013/6/26/8:36:11 serial input: a
+2013/6/26/8:36:14 serial input: debug
+2013/6/26/9:4:39 serial input: a
+2013/6/26/9:4:40 serial input: s
+2013/6/26/9:4:42 serial input: w
+2013/6/26/9:4:42 serial input: d
+2013/6/26/9:4:43 serial input: s
+2013/6/26/9:4:45 serial input: s
+2013/6/26/9:4:46 serial input: s
+2013/6/26/9:4:47 serial input: d
+2013/6/26/9:4:48 serial input: d
+2013/6/26/9:4:50 serial input: a
+2013/6/26/9:4:50 serial input: a
+2013/6/26/9:4:54 serial input: a
+2013/6/26/9:4:55 serial input: a
+2013/6/26/9:4:57 serial input: s
+2013/6/26/9:4:57 serial input: s
+2013/6/26/9:4:58 serial input: s
+2013/6/26/9:4:59 serial input: w
+2013/6/26/9:5:0 serial input: w
+2013/6/26/9:5:0 serial input: w
+2013/6/26/9:5:0 serial input: d
+2013/6/26/9:5:2 serial input: s
+2013/6/26/9:5:2 serial input: d
+2013/6/26/9:5:3 serial input: d
+2013/6/26/9:5:4 serial input: a
+2013/6/26/9:5:7 serial input: a
+2013/6/26/9:5:9 serial input: a
+2013/6/26/9:5:10 serial input: s
+2013/6/26/9:5:11 serial input: s
+2013/6/26/9:5:11 serial input: s
+2013/6/26/9:5:12 serial input: d
+2013/6/26/9:5:13 serial input: ss
+2013/6/26/9:5:15 serial input: s
+2013/6/26/9:5:17 serial input: s
+2013/6/26/9:5:17 serial input: s
+2013/6/26/9:5:18 serial input: s
+2013/6/26/9:5:18 serial input: s
+2013/6/26/9:5:19 serial input: s
+2013/6/26/9:5:19 serial input: s
+2013/6/26/9:5:23 serial input: a
+2013/6/26/9:5:25 serial input: debug
+2013/6/27/1:59:33 serial input: a
+2013/6/27/1:59:37 serial input: s
+2013/6/27/1:59:37 serial input: s
+2013/6/27/1:59:38 serial input: s
+2013/6/27/1:59:41 serial input: w
+2013/6/27/1:59:41 serial input: w
+2013/6/27/1:59:41 serial input: w
