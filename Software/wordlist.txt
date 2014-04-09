@@ -11,10 +11,10 @@
 
 5
 "**WARNING** RAM below 1000 bytes: ",
-"**VORSICHT** RAM unten 1000 bytes: ",
+"**VORSICHT** RAM unter 1000 Bytes: ",
 6
 "**WARNING** RAM below 500 bytes: ",
-"**VORSICHT** RAM unten 500 bytes: ",
+"**VORSICHT** RAM unter 500 Bytes: ",
 7
 "**WARNING**",
 "**VORSICHT**",
@@ -23,10 +23,10 @@
 "BOOT",
 9
 "Engine Hours: ",
-"motor stunden: ",
+"Motor Stunden: ",
 10
 "Free RAM: ",
-"kostenlos RAM: ",
+"Freies RAM: ",
 11
 "Main Menu   ",
 "Hauptmenü   ",
@@ -35,7 +35,7 @@
 "Informationen      ",
 13
 "Modes              ",
-"Modes              ",
+"Modi               ",
 14
 "Settings           ",
 "Einstellungen      ",
@@ -47,7 +47,7 @@
 "Motor              ",
 17
 "I/O States         ",
-"I/O Staaten        ",
+"I/O Status         ",
 18
 "System             ",
 "System             ",
@@ -56,10 +56,10 @@
 "Informationen",
 20
 "I/O States  ",
-"I/O Staaten ",
+"I/O Status  ",
 21
 "Speed              ",
-"Beschleunigen      ",
+"Geschwindigkeit    ",
 22
 "Altitude           ",
 "Höhe               ",
@@ -68,7 +68,7 @@
 "Genauigkeit        ",
 24
 "Sats #             ",
-"Satellites #       ",
+"Satelliten #       ",
 25
 "Coordinates        ",
 "Koordinaten        ",
@@ -86,7 +86,7 @@
 "Zufällige          ",
 30
 "Auto Light Delay   ",
-"Auto Licht Verzöger",
+"Auto-Licht-Verzöger",
 31
 "Auto Light Dimmer  ",
 "Auto-Licht-Dimmer  ",
@@ -95,7 +95,7 @@
 "Low Voltage Cut Off",
 33
 "Speed Units        ",
-"Geschwindigkeit Ein",
+"Geschwindigkeitsein",
 34
 "Altitude Units     ",
 "Höheneinheiten     ",
@@ -110,13 +110,13 @@
 "Deutsch            ",
 38
 "Free RAM           ",
-"kostenlos          ",
+"Freies RAM         ",
 39
 "Free RAM   ",
-"kostenlos  ",
+"Freies RAM ",
 40
 "Modes       ",
-"Modes       ",
+"Modi        ",
 41
 "Settings    ",
 "Einstellunge",
