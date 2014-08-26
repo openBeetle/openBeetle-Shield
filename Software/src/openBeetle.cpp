@@ -1128,7 +1128,6 @@ void lcdPrint(){
     lcd.setCursor(1, 2);
     lcd.print(language[10]);
     lcd.print(memoryFree());
-    lcd.print("    ");
     lcd.setCursor(0, 3);
     lcd.print(" ");
     lcd.setCursor(1, 3);
